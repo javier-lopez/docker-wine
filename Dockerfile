@@ -57,6 +57,7 @@ RUN  sed -i -e '/^\[blackarch\]$/,+1d' /etc/pacman.conf && \
 
     # Install Wine & Winetricks dependencies
     pacman --noconfirm -S \
+    glibc                 \
     cabextract            \
     lib32-gnutls          \
     lib32-mpg123          \
